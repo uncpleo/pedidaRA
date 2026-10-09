@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-ivory: #FFFDF9;
+    --text-charcoal: #64605E;
+    --gold-main: #C5A246;
+  }
+  
+  body {
+    background-color: #FFFDF9;
+    color: #64605E;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-great-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Subtle gold foil shimmer effect for primary button */
+.gold-btn-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #C5A246 50%, #B8922C 100%);
+  box-shadow: 0 4px 15px rgba(197, 162, 70, 0.25);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-btn-gradient:hover {
+  background: linear-gradient(135deg, #DFBE4E 0%, #CFA949 50%, #C5A246 100%);
+  box-shadow: 0 6px 20px rgba(197, 162, 70, 0.38);
+  transform: translateY(-2px);
+}
+
+.gold-btn-gradient:active {
+  transform: translateY(0);
+}
+
+/* Double fine gold rectangular frame */
+.gold-double-frame {
+  border: 1px solid rgba(197, 162, 70, 0.7);
+  position: relative;
+}
+
+.gold-double-frame::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(197, 162, 70, 0.45);
+  pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .gold-double-frame::before {
+    inset: 10px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDF9;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8DCB8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A246;
+}

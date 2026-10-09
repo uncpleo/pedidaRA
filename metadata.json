@@ -1,0 +1,6 @@
+{
+  "name": "Pedida de Mano - River & Angely",
+  "description": "Invitación elegante, interactiva y romántica para la pedida de mano de River y Angely.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
