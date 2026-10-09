@@ -164,7 +164,7 @@ export default function App() {
                   HORA
                 </span>
                 <span className="font-cormorant text-lg sm:text-xl font-semibold text-[#3A3533] tracking-wide">
-                  3:00 P. M.
+                  2:00 P. M.
                 </span>
               </div>
             </div>
